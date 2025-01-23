@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - União Pré-moldados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagensprincipais/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Barra superior com informações de contato -->
+    <div class="top-bar">
+        <span>Solicite seu orçamento sem compromisso.</span>
+        <span class="contact-info">Fábio - (27) 99835-4348 / Junior - (27) 99999-7710</span>
+    </div>
+
+    <!-- Cabeçalho com link de retorno à página inicial -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="IMG-20230623-WA0181.jpg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <!-- Ícone do menu hambúrguer para dispositivos móveis -->
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+            <!-- Menu de navegação -->
+            <ul class="nav-links">
+                <li><a href="index.html#services-section">SERVIÇOS</a></li>
+                <li><a href="index.html#contact">CONTATO</a></li>
+                <li><a href="https://wa.me/5527998354348" target="_blank">SOLICITE SEU ORÇAMENTO</a></li>
+                <li><a href="https://www.google.com.br/maps/place/Uni%C3%A3o+Pr%C3%A9-moldados+Lajes+e+Concreto/@-20.3088536,-40.3181814,17z/data=!4m8!3m7!1s0xb83d1fddf23efb:0xa37e495b0a817ef1!8m2!3d-20.3088586!4d-40.3156065!9m1!1b1!16s%2Fg%2F11qws79cv1?entry=ttu&amp;g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">FEEDBACK DOS CLIENTES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrossel de imagens da página Quem Somos -->
+    <div class="carousel-images">
+        <img src="quemsomos/construcao-civil-foto-freepik-scaled.jpg" alt="Construção Civil">
+        <img src="quemsomos/quotsteel-beam-installation-with-cranes-workers-hard-hatsquot.jpg" alt="Instalação de Vigas de Aço">
+    </div>
+
+    <!-- Conteúdo da página Quem Somos -->
+    <main>
+        <section class="about-us">
+            <h1>Quem Somos</h1>
+            <p>Somos uma empresa especializada no ramo de lajes pré-moldadas, lajes maciças e concretagens. Estamos há mais de 20 anos atuando na Grande Vitória. Através de engenheiro responsável e profissionais capacitados, buscamos sempre entregar para o cliente produtos de alta qualidade, confiabilidade e o melhor atendimento. Respeitamos todas as normas técnicas de fabricação, com o objetivo de melhor atender nossos clientes, entregando um material de procedência. Se tem União Pré - Moldados, tem qualidade, respeito e comprometimento.</p>
+        
+            <!-- Adicionando as imagens circulares -->
+            <div class="about-us-images">
+                <img src="quemsomos/WhatsApp_Image.jpg.jpeg" alt="Foto Quem Somos 2">
+                <img src="quemsomos/WhatsApp_Image2.jpg.jpeg" alt="Foto Quem Somos 1">
+            </div>
+        </section>
+    </main>
+
+    <!-- Espaço e fundo vermelho para "Solicite seu orçamento" com link para WhatsApp -->
+    <div class="request-quote">
+        <a href="https://wa.me/5527998354348" target="_blank">SOLICITE SEU ORÇAMENTO</a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <img src="IMG-20230623-WA0181.jpg" alt="Logo da Empresa" class="footer-logo">
+            <div class="footer-text">
+                <p class="footer-installment">PARCELAMOS EM ATÉ 10X</p>
+                <p class="footer-contact">Fabio (27)99835-4348 / Junior (27)99999-7710</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 All rights reserved | Desenvolvido por Fabio Boeker Junior</p>
+        </div>
+    </footer>
+
+    <!-- Script do Carrossel -->
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            document.querySelector('.carousel-images').style.transform = `translateX(-${currentIndex * 100}vw)`;
+        }
+
+        setInterval(showNextImage, 3000); // Troca de imagem a cada 3 segundos
+    </script>
+
+    <!-- Script para alternar o menu em dispositivos móveis -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            // Verifica se o menu está visível e alterna entre 'flex' e 'none'
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+            }
+        }
+    </script>
+
+    <!-- Ícone flutuante do WhatsApp -->
+    <a href="https://wa.me/5527998354348" class="whatsapp-float" target="_blank">
+        <img src="imagensprincipais/transferir.png" alt="WhatsApp">
+    </a>
+
+</body>
+</html>
