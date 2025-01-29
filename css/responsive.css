@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1280px) {
 /* ---------- HEADER ---------- */
 
 header .header-logo img {
@@ -130,6 +130,10 @@ header .header-logo img {
     gap: 30px;
     flex-direction: column;
     align-items: center;
+  }
+
+  .itens-ava .feedback img {
+    width: 360px;
   }
 
 

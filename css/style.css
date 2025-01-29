@@ -19,6 +19,12 @@ body {
     margin: 0 auto;
 }
 
+/* ---------- Efeitos ---------- */
+
+.effect-txt-sv, .effect-services-img1, .effect-services-img2, .effect-services-img3, .effect-txt-ava, .effect-feedback-img1, .effect-feedback-img2, .effect-feedback-img3, .effect-txt-aboutus, .effect-txt-insta, .effect-img-aboutus {
+  visibility: hidden;
+}
+
 /* ---------- HEADER ----------*/
 
 header {
@@ -188,6 +194,10 @@ header .solicite button:hover {
     justify-content: center;
 }
 
+.btn-solicitacao a {
+  text-decoration: none;
+}
+
 .button {
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -287,19 +297,14 @@ header .solicite button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(221, 221, 221);
-    border: 1px solid rgb(206, 206, 206);
-    box-shadow: 2px 1px 10px rgb(131, 131, 131);
-    width: 350px;
-    height: 250px;
     border-radius: 8px;
     margin-bottom: 17px;
   }
 
   .itens-ava .feedback img {
-    width: 310px;
-    height: 210px;
+    width: 400px;
     border-radius: 8px;
+    box-shadow: 2px 1px 10px rgb(131, 131, 131);
   }
 
   .btn-ava button {
@@ -312,6 +317,7 @@ header .solicite button:hover {
     cursor: pointer;
     border: 1px solid rgb(206, 206, 206);
     border-radius: 4px;
+    margin-top: 17px;
   }
 
   .btn-ava button:hover {
@@ -492,4 +498,27 @@ footer span {
     box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
   }
     
+  /* ---------- Botão WhatsApp ---------- */
+
+  .wpp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Cor do WhatsApp */
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.wpp-btn a {
+  color: white;
+  font-size: 24px;
+}
+
+
+
     

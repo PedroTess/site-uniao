@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <script src="js/reveal.js" defer ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!-- FONTES GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +22,7 @@
 <body>
     
 
-    <header id="inicio">
+    <header >
         <div class="interface">
             <nav class="header-site">
                 <div class="header-logo">
@@ -28,7 +31,7 @@
     
                 <div class="nav-list">
                   <ul>
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="quem-somos.html">Quem somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contatos</a></li>
@@ -36,7 +39,7 @@
                 </div>
     
                 <div class="solicite">
-                    <a href="#">
+                    <a href="https://wa.me/5527998354348?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento!">
                         <button>Solicite seu orçamento</button>
                     </a>
                   </div>
@@ -56,7 +59,7 @@
                     </ul>
 
                     <div class="solicite">
-                      <a href="#">
+                      <a href="https://wa.me/5527998354348?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento!">
                         <button>Solicite seu orçamento</button>
                       </a>
                     </div>
@@ -103,17 +106,17 @@
     <section class="services" id="servicos">
       <div class="interface">
         <div class="itens-sv">
-          <div class="txt-sv">
+          <div class="txt-sv effect-txt-sv">
             <h1><strong>CONHEÇA ALGUNS DOS NOSSOS SERVIÇOS:</strong></h1>
           </div>
           <div class="services-img">
-            <img src="imgs/sv-1.jpeg" alt="servicos1">
-            <img src="imgs/sv-2.jpeg" alt="servicos2">
-            <img src="imgs/sv-3.jpeg" alt="servicos3">
+            <img class="effect-services-img1" src="imgs/sv-1.jpeg" alt="servicos1">
+            <img class="effect-services-img2" src="imgs/sv-3.jpeg" alt="servicos2">
+            <img class="effect-services-img3" src="imgs/sv-2.jpeg" alt="servicos3">
           </div>
 
-          <div class="insta">
-            <a href="#">
+          <div class="insta effect-txt-insta">
+            <a href="https://www.instagram.com/uniaopre_moldados/">
               <button class="btn-insta">
                 <svg viewBox="0 0 16 16" class="bi bi-instagram" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
                   <span>Instragram</span>
@@ -138,16 +141,18 @@
               <p><i class="bi bi-shield-check"></i><br> Segurança</p><p><i class="bi bi-stopwatch"></i><br> Agilidade</p><p><i class="bi bi-check-circle"></i><br> Qualidade</p>
             </div>
             <div class="btn-solicitacao">
-              <button class="button">
-                Solicite seu orçamento
-                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
+              <a href="https://wa.me/5527998354348?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento!">
+                <button class="button">
+                  Solicite seu orçamento
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -157,23 +162,23 @@
     <section class="feedbacks" id="feedback">
       <div class="interface">
         <div class="itens-ava">
-          <div class="txt-ava">
+          <div class="txt-ava effect-txt-ava">
             <h1><strong>VEJA ALGUNS DOS NOSSOS FEEDBACKS</strong></h1>
           </div>
           <div class="ava">
 
             <div class="feedback">
-              <img src="imgs/feedbacks/1.png" alt="">
+              <img class="effect-feedback-img1" src="imgs/feedbacks/1.png" alt="">
             </div>
             <div class="feedback">
-              <img src="imgs/feedbacks/2.png" alt="">
+              <img class="effect-feedback-img2" src="imgs/feedbacks/2.png" alt="">
             </div>
             <div class="feedback">
-              <img src="imgs/feedbacks/3.png" alt="">
+              <img class="effect-feedback-img3" src="imgs/feedbacks/3.png" alt="">
             </div>
           </div>
-          <div class="btn-ava">
-            <a href="https://www.google.com/maps/place/União+Pré-moldados+Lajes+e+Concreto/@-20.3088586,-40.3181814,17z/data=!4m18!1m9!3m8!1s0xb83d1fddf23efb:0xa37e495b0a817ef1!2sUnião+Pré-moldados+Lajes+e+Concreto!8m2!3d-20.3088586!4d-40.3156065!9m1!1b1!16s%2Fg%2F11qws79cv1!3m7!1s0xb83d1fddf23efb:0xa37e495b0a817ef1!8m2!3d-20.3088586!4d-40.3156065!9m1!1b1!16s%2Fg%2F11qws79cv1?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D">
+          <div class="btn-ava effect-txt-insta">
+            <a href="https://www.google.com.br/maps/place/União+Pré-moldados+Lajes+e+Concreto/@-20.3088586,-40.3181814,17z/data=!4m18!1m9!3m8!1s0xb83d1fddf23efb:0xa37e495b0a817ef1!2sUnião+Pré-moldados+Lajes+e+Concreto!8m2!3d-20.3088586!4d-40.3156065!9m1!1b1!16s%2Fg%2F11qws79cv1!3m7!1s0xb83d1fddf23efb:0xa37e495b0a817ef1!8m2!3d-20.3088586!4d-40.3156065!9m1!1b1!16s%2Fg%2F11qws79cv1?entry=ttu&g_ep=EgoyMDI1MDEyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                 <button>Ver mais</button>
             </a>
           </div>
@@ -189,11 +194,11 @@
           </div>
           <div class="txt-ctt">
             <h1>Construa com Solidez e Facilidade!</h1>
-            <p>Aqui oferecemos estruturas de alta qualidade e segurança para sua obra.
+            <p>Através de um engenheiro responsável, oferecemos materiais de alta qualidade e segurança para sua obra.
               <br>
-              <span><strong>Parcelamos em até 10x!</strong></span>
+              <span><strong>PARCELAMOS EM ATÉ 10X !</strong></span>
               <br>
-              Peça seu orçamento agora e facilite sua construção!</p>
+              Faça seu orçamento sem compromisso e dê início à realização do seu sonho!</p>
           </div>
           <div class="ctts">
             <h1>Contatos:</h1>
@@ -208,12 +213,20 @@
       <div class="interface">
         <div id="direitos">
             <p>© 2025, Todos os direitos reservados</p>
-            <p>Desenvolvido por  <a href="https://phftdev.com.br" ><span> Phftdev</span></a></p>
+            <p>Desenvolvido por  <a href="https://phftdev.com.br" target="_blank"><span> Phftdev</span></a></p>
         </div>
       </div>
     </footer>
-    
-    
+
+    <div class="wpp-btn">
+      <a href="https://wa.me/5551999999999" target="_blank" class="btn whatsapp-btn">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+
+  
+      <script src="js/reveal.js"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
       <script src="js/sript.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
